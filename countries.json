@@ -1,0 +1,153 @@
+[
+    
+    {
+        "key": "Canada",
+        "region": "Americas",
+        "subregion": "Northern America",
+         
+        "value": 6590000000
+       
+    },
+    {
+        
+        "key": "United States",
+        "region": "Americas",
+        "subregion": "North America",
+         
+        "value": 61700000000
+    },
+
+    {
+        "key": "India",
+        "region": "Asia",
+        "subregion": "South Asia",
+         
+        "value": 40440000000
+       
+    },
+    {
+        "key": "Brazil",
+        "region": "Americas",
+        "subregion": "South America",
+         
+        "value": 4610000000
+    },
+    {
+        "key": "Germany",
+        "region": "Europe",
+        "subregion": "Central Europe",
+         
+        "value": 5440000000
+    }, 
+    {
+        "key": "United Kingdom",
+        "region": "Europe",
+        "subregion": "Northern Europe",
+         
+        "value": 5310000000
+    },
+    {
+        "key": "France",
+        "region": "Europe",
+        "subregion": "Western Europe",
+         
+        "value": 4720000000
+    },
+    {
+        "key": "Spain",
+        "region": "Europe",
+        "subregion": "Southern Europe",
+         
+        "value": 2200000000
+    },
+    {
+        "key": "Italy",
+        "region": "Europe",
+        "subregion": "Southern Europe",
+         
+        "value": 5060000000
+    },
+    {
+        "key": "Turkey",
+        "region": "Asia",
+        "subregion": "Western Asia",
+         
+        "value": 7630000000
+    },
+
+    {
+        "key": "Singapore",
+        "region": "Asia",
+        "subregion": "South-Eastern Asia",
+         
+        "value": 2500000000
+    },
+
+    {
+        "key": "Australia",
+        "region": "Oceania",
+        "subregion": "Australa and New Zealand",
+         
+        "value": 3650000000
+    },
+    {
+        "key": "Malaysia",
+        "region": "Asia",
+        "subregion": "South-Eastern Asia",
+         
+        "value": 1800000000
+    },
+    {
+        "key": "Thailand",
+        "region": "Asia",
+        "subregion": "South-Eastern Asia",
+         
+        "value": 2190000000
+    },
+    {
+        "key": "Hong Kong",
+        "region": "Asia",
+        "subregion": "Eastern Asia",
+         
+        "value": 9460000000
+    },
+    {
+        "key": "China",
+        "region": "Asia",
+        "subregion": "Eastern Asia",
+         
+        "value": 111460000000
+    },
+    {
+        "key": "Japan",
+        "region": "Asia",
+        "subregion": "Eastern Asia",
+         
+        "value": 9340000000
+    },
+    {
+        "key": "South Korea",
+        "region": "Asia",
+        "subregion": "Eastern Asia",
+         
+        "value": 4000000000
+    },
+    {
+        "key": "Russia",
+        "region": "Europe",
+        "subregion": "Eastern Europe",
+         
+        "value": 8670000000
+    },
+
+    {
+        "key": "Mexico",
+        "region": "Americas",
+        "subregion": "Central America",
+         
+        "value": 1840000000
+    }
+
+
+
+]

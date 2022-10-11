@@ -16,7 +16,7 @@
 <body>
 
 	<header class="header">
-		<div class="container-fluid">
+		<section class="container-fluid">
 			<section class="row d-flex align-items-center">
 				<section class="col-auto">
 					<a href="#" class="logo"><h1>BADABLING</h1></a>
@@ -34,12 +34,12 @@
 						<i class="fa fa-bars"></i></a> -->
 				</nav>
 	
-				</div>
 			</section>
-		</div>
+			</section>
+		</section>
 	</header>	
-
-<div class="main_menu" id="main_menu">
+<main>
+<section class="main_menu" id="main_menu">
 	<span class="menu_bg"></span>
 	<ul>
 		<li><a href="index.html">Home</a></li>
@@ -48,26 +48,15 @@
 		<li><a href="DataVisualization.html">Data-Visualization</a></li>
 		<li><a href="#">Data-Art</a></li>
 	</ul>
-</div>
+</section>
 
-<div class="block-row homepage_wireframe" id="section6" data-parallax="scroll" data-image-src ="images/DesignBG.jpg" >
+<section class="block-row homepage_wireframe" id="section6" data-parallax="scroll" data-image-src ="images/DesignBG.jpg" >
 	<section class="hp_wireframe_container swiper">
 
 		<h1>DESIGN</h1>
 		<h2>HOME PAGE WIREFRAME</h2>
 
-		<!-- <figure class = "wireframes">
-			<img src="images/w-home.png" alt="an image showing wireframe of homepage">
-			<img src="images/w-about.png" alt="an image showing wireframe of about page">
-			<img src="images/w-services.png" alt="an image showing wireframe of service page">
-			<img src="images/w-contact.png" alt="an image showing wireframe of contact page">
-			<img src="images/w-design.png" alt="an image showing wireframe of design page">
-			<img src="images/w-blog.png" alt="an image showing wireframe of blog page">
-
-
-
-
-		</figure> -->
+		
 
 		<section class = "design-container ">
 			<section class = "design-content ">
@@ -84,17 +73,17 @@
 			
 			</section>
 			</section>
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-pagination"></div>
+			<section class="swiper-button-next"></section>
+			<section class="swiper-button-prev"></section>
+			<section class="swiper-pagination"></section>
 			</section>
 		</section>
 		
 		  <!-- Swiper JS -->
 		
 	</section>
-</div>
-<div class="block-row styleguide" id="section2"  data-parallax="scroll" data-image-src="images/blackBG.jpg">
+</section>
+<section class="block-row styleguide" id="section2"  data-parallax="scroll" data-image-src="images/blackBG.jpg">
 	<section class="container">
 		<section class="row">
 			<section class="col-md-7">
@@ -103,7 +92,7 @@
 					
 						<article class = "font-intro">
 							<figure class = "style-pic">
-								<img src="/images/styleguidepic1.png" alt="a photo of styleguide showing font" class = u-photo>
+								<img src="images/styleguidepic1.png" alt="a photo of styleguide showing font" class = u-photo>
 
 								<p slot = "font-text">In terms of the font, I went with the font Playfair Display as I thought it was a font that screamed, "elegant" and "exclusive", which perfectly describes the theme of my website. Across the site, I have tried to stick to this font to create a consistency with regards to the font. This was done, to try and implement convention or appease to the expectdness of the users. 
 								</p>
@@ -114,7 +103,7 @@
 
 						<article class = "font-intro">
 							<figure class ="back-image">
-								<img src="/images/ContactBG.jpg" alt="a photo of black and gold background" class = u-photo> 
+								<img src="images/ContactBG.jpg" alt="a photo of black and gold background" class = u-photo> 
 
 								<p>My website appeals to upper class individuals as it offers the finest and most elegant pieces of jewelry. In reltion to that aspect, I went with the colours, black and gold. Black is a classic colour and Gold is often associated with jewelry or expensie taste. I thought the colour of the scheme would suit the the theme of the website, as these two powerful colours provide a good contrast as well.</p>
 								</figure>
@@ -125,7 +114,7 @@
 							
 						<article class = "font-intro">
 							<figure class ="jewl-image">
-								<img src="/images/1BJewelry.jpg" alt="image of jewlwery-ring" class = "u-photo">							
+								<img src="images/1BJewelry.jpg" alt="image of jewlwery-ring" class = "u-photo">							
 
 								<p>Pictures speak thousands of words. I included images of "expensive" looking jewelry that I thought would fit well with the overall message and theme of the website. I think it's a good visual cue as seeing as always believing. I made use of multiple images and videos of jewlery from necklaces, to earings, to rings. This further added to the aesthetic of the website.
 								</p>
@@ -142,10 +131,10 @@
 			</section>
 		</section>
 	</section>
-</div>
+</section>
 
-</div>
-<div class="block-row data-section" id="section2"  data-parallax="scroll" data-image-src="images/DesignBG.jpg">
+</section>
+<section class="block-row data-section" id="section2"  data-parallax="scroll" data-image-src="images/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background.jpg">
 	<section class="container">
 		<section class="row">
 			<section class="col-md-7">
@@ -160,7 +149,7 @@
 
 					</p>
 					<figure class = "u-photo"  slot = "tree-data">
-						<img src="/images/dataplan.png" alt="prototype of tree map used in constructing actual data visuals" class = "data-img">
+						<img src="images/dataplan.png" alt="prototype of tree map used in constructing actual data visuals" class = "data-img">
 					</figure>
 					<p class = "data-caption">	Rough sketch of tree map: prototype.
 					</p>
@@ -171,6 +160,8 @@
 						The two data visualizations I've made in the Data Visualisation section, is a representation of movies data as well as games data. The Video game data set represents the top 100 video game sales and is grouped by the platform. Users can ready this tree map by looking at the categories which are all shaded by unique colours that is also displayed in the key section at the bottom. In each catergory of platform, the squares differ in size based on the value of the games. The most sold game in each group will have a large section of space in the square compared to the lowest or other games sales that are smaller in comparison.
 
 						The same thing can be said for the movie data-set. This represents the top 100 highest grossing films grouped by genre. In each genre category, there are squares that differ in size and this is a representation of their values. The movie with the biggest space or square in that genre category, is the highest grossing movie within their category and the oppsoite applies for the smallest sqaure.
+						 The reason I chose these two data sets to represent was due to the lack of API's based on Jewlery or anything related to the theme of my website. It was quite the mission finding anything related to what my website is about, and if I did find something, it wasn't much data that I could use to represent. In addition, they all required a fee in order for me to be given a unique key. As a result of this, I decided to compile my own data set based on figures I found on the internet. The new interactive chart that I've added, is remotely more associated the overall context of my website. The only problem with this though, is that this data is not derived from an API, which was one of the requirements. I thought this would be better than adding more charts that represented data that did not fit the context of the website. A woman with a plan.
+						 This new interactive map, is interactive in the sense that it allows one to zoom into categories. The chart is divided by continets and further sub-categorized by countries. This gives one an overview of how much the world spends on jewlery, as well as how much each continet spends, and lastly each country. I only received data from the contients and countries that were avaiable from the source of this information.
 
 					</p>
 				</article>
@@ -178,7 +169,8 @@
 			</section>
 		</section>
 	</section>
-</div>
+</section>
+</main>
 
 
 <footer class="footer">
@@ -189,6 +181,6 @@
 <script type="text/javascript" src="js/basic.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-<script src="/js/swiperWireframe.js"></script>
+<script src="js/swiperWireframe.js"></script>
 </body>
 </html>

@@ -20,57 +20,45 @@
 
 <body>
     <header class="header">
-        <div class="container-fluid">
+        <section class="container-fluid">
             <section class="row d-flex align-items-center">
                 <section class="col-auto">
                     <a href="index.html" class="logo"><h1>BADABLING</h1></a>
                 </section>
-                <nav class="text_right">
-                    <input type = "checkbox" id = "check">
-            <label for="check" class = "burger-button" id = "burger_button"><i class="fa-solid fa-bars"></i></label>
-                        <ul class = "nav_sections"> 
-                            <li><a href="Blog.html">Blog</a></li>
-                            <li><a href="Design.html">Design</a></li>
-                            <li><a href="DataVisualization.html">Data-Visualisation</a></li>
-                            <li><a href="#">Data-Art</a></li>
-                        </ul>
-                    <!-- <a class="nav_icon" id="nav_icon" href="#!">
-                        <i class="fa fa-bars"></i></a> -->
-                </nav>
+                <script id="replace_with_navbar" src="/js/nav..js"></script>
     
-                </div>
+                
             </section>
-        </div>
+        </section>
     </header>	
+    <main>
 
-    <article class="main_menu" id="main_menu">
-        <span class="menu_bg"></span>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="Design.html">Design</a></li>
-            <li><a href="DataVisualization.html">Data-Visualization</a></li>
-            <li><a href="#">Data-Art</a></li>
-    
-    
-        </ul>
-    </article>
+        <script id="replace_with_dropdown" src="/js/dropdown.js"></script>
+
     <div id="query-container" class="bg-primary shadow-lg">
         <a href="#games" id="games" class="text-white">
           Video Game Data Set</a>
         <a href="#movies" id="movies" class="text-white">
           Movies Data Set</a>
+          <a href="interactivedata.html" id="" class="text-white">
+            Jewlery Data Set</a>
     
       </div>
       
       <div id="tree-map" class="text-dark">
         <h1 id="title" class="text-center mt-3"></h1>
         <p id="description" class="text-center"></p>
+
+        <div id = "data">
+            <ul></ul>
+          </div>
       </div>
+      
 
       <script type="text/javascript" src="js/basic.js"></script>
-      <script type = "module" src="/js/DataV.js"></script>
+      <script type = "module" src="js/DataV.js"></script>
 
     </section>
 </body>
+</main>
 </html>

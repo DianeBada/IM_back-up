@@ -560,7 +560,7 @@ padding-top: 200px;
 	display: grid;
 	top:0 ;
 	left: 0;
-	grid-template-columns: repeat(6, 300px);
+	grid-template-columns: repeat(3, 900px);
 	grid-gap: 50px;
 	pointer-events: none;
 	padding-top: 300px;

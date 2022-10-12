@@ -266,6 +266,56 @@ position: absolute;
       height: 20%;
     }
 
+    #chart{
+
+      margin-left: 50px;
+      width: 3x;
+
+      
+
+    }
+
+    #tree-map svg.games{
+      max-width: 95%; 
+    width: auto;
+   
+
+    }
+
+    #tree-map{
+      margin-top: -250px;
+    }
+
+    #title{
+      padding-top: 300px;
+      margin-left: -500px ;
+    }
+
+    #description{
+      margin-left: -480px ;
+
+
+    }
+
+    #tree-map svg.movies{
+      max-width: 95%; 
+    width: auto;
+   
+
+    }
+
+    #chart svg{
+      max-width: 101%; 
+    width: auto;
+
+    }
+
+    #chart{
+      max-width: 90%;
+      margin-left: 10px ;
+    }
+
+
   }
   
   

@@ -46,7 +46,7 @@ h1{
 	/*background-size: cover;*/
 }
 
-.nav_sections{
+.nav-sections{
 	position: relative;
 	display: flex;
 	float: right;
@@ -58,7 +58,7 @@ h1{
 
 }
 
-.nav_sections li{
+.nav-sections li{
 	position: relative;
 	display: inline-block;
 	padding-top: 10px;
@@ -72,7 +72,7 @@ h1{
 	
 }
 
-.text_right ul li a{
+.text-right ul li a{
 	text-decoration: none;
 	color: white;
 	display: flex;
@@ -115,7 +115,7 @@ h1{
   }
 
 
-.main_menu{
+.main-menu{
 	position: fixed;
 	right: 0;
 	top:-10px;
@@ -127,17 +127,17 @@ h1{
 	transition: all 0.3s ease-in-out;
 	
 }
-.main_menu.active{
+.main-menu.active{
 	height: 100vh;
 }
-.main_menu ul{
+.main-menu ul{
 	margin:0;
 	padding: 0;
 	list-style: none;
 	position: relative;
 	z-index: 1;
 }
-.main_menu ul li a{
+.main-menu ul li a{
 	display: block;
 	text-decoration: none;
 	padding: 10px;
@@ -146,11 +146,11 @@ h1{
 	color: #000;
 	background: #fff;
 }
-.main_menu ul li a:hover{
+.main-menu ul li a:hover{
 	background: rgba(7,75,75,0.8);
 	color: #fff;
 }
-.menu_bg{
+.menu-bg{
 	background: #fff;
 	position: absolute;
 	width: 10px;
@@ -161,7 +161,7 @@ h1{
 	margin-left: -5px;
 	transition: all 0.3s ease-in-out;
 }
-.main_menu.active .menu_bg{
+.main-menu.active .menu_bg{
 	transform: scale(120);
 }
 .logo{
@@ -191,7 +191,7 @@ h1{
   font-weight: 700;
 }
 /*about*/
-.about_box{
+.about-box{
 	background:rgba(255, 255, 255, 0);
 	border-radius: 20px;
 	padding: 50px;
@@ -204,7 +204,7 @@ h1{
 	
 }
 
-.about_box h2{
+.about-box h2{
 	display: inline;
 	color: white;
 	font-weight: 700;
@@ -212,7 +212,7 @@ h1{
 	white-space: nowrap;
 }
 
-.about_box p{
+.about-box p{
 	color: wheat;
 
 }
@@ -301,9 +301,17 @@ h1{
 	overflow: hidden;
 	padding: 20px;
   }
+
+  .service-instruction{
+	color: white;
+	margin-left: 500px;
+	margin-top: -60px;
+	padding-bottom: 30px;
+	font-size: 20px;
+  }
   
   .product-category {
-	padding: 0 10vw;
+	padding: 0 0vw;
 	font-size: 30px;
 	font-weight: 500;
 	margin-bottom: 40px;
@@ -315,6 +323,7 @@ h1{
 	display: flex;
 	overflow-x: auto;
 	scroll-behavior: smooth;
+	margin-left: -60px;
   }
   
   .product-container::-webkit-scrollbar {
@@ -491,7 +500,7 @@ h1{
 	font-size: 40px;
 	margin-left: 180px;
 }
-.container_box{
+.container-box{
 	max-width: 1000px;
 	width: 600px;
 	height: 500px;
@@ -500,8 +509,8 @@ h1{
 	background:rgb(74, 72, 72);
 	border-radius: 15px;
 }
-.container_box input:not([type="submit"]),
-.container_box textarea{
+.container-box input:not([type="submit"]),
+.container-box textarea{
 	width: 100%;
 	height: 40px;
 	resize: none;
@@ -510,10 +519,10 @@ h1{
 	border-radius: 5px;
 	border:1px solid black;
 }
-.container_box textarea{
+.container-box textarea{
 	height: 100px;
 }
-.container_box input[type="submit"]{
+.container-box input[type="submit"]{
 	width: 150px;
 	background: rgb(121, 92, 38);
 	border:0;
@@ -541,11 +550,12 @@ h1{
 /* WireFrame Section*/
 .hp_wireframe_container h1{
 color: white;
-margin-top: -170px;
+margin-top: -150px;
 font-weight: 700;
 font-size: 50px;
 text-align: center;
 padding-top: 200px;
+
 }
 
 .hp_wireframe_container h2{
@@ -564,6 +574,7 @@ padding-top: 200px;
 	grid-gap: 50px;
 	pointer-events: none;
 	padding-top: 300px;
+
 }
 .swiper {
 	width: 100%;
@@ -616,6 +627,10 @@ padding-top: 200px;
 	height: 200px;
 	float: left;
 }
+.style-pic{
+	margin-left: 10px;
+
+}
 .font-text{
 	color: white;
 	float: right;
@@ -638,22 +653,27 @@ padding-top: 200px;
 }
 
 .back-image{
-	margin-top: 100px;
+	margin-top: 40px;
+	margin-left: 10px;
+
 }
 .jewl-image img{
 	width: 300px;
 	height: 250px;
 	float: left;
+	margin-top: -10px;
+
 	
 }
-.jewl-image img{
-	margin-top: -10px;
+.jewl-image{
+	margin-left: 10px;
+
 
 }
 
 .data-heading{
 	color: white;
-	margin-top: -290px;
+	margin-top: -170px;
 	font-weight: 700;
 	font-size: 60px;
 	text-align: center;
@@ -663,7 +683,7 @@ padding-top: 200px;
 .data-map{
 	color: white;
 	margin-right: 100px;
-	margin-left: 100px;
+	margin-left: 10px;
 }
 
 .data-img{
@@ -679,8 +699,8 @@ margin-left: 300px;
 
 .data-explain {
 	color: white;
-	margin-right: 100px;
-	margin-left: 100px;
+	margin-right: 80px;
+	margin-left: 10px;
 }
 
 .title-explain
@@ -696,14 +716,14 @@ margin-left: 300px;
 
 /********* Blog section ********/
 
-.blog_container h1{
+.blog-container h1{
 color: white;
 font-weight: 700;
 font-size: 60px;
 padding-top: 40px;
 text-align: center;
 }
-.blog_container h2{
+.blog-container h2{
 	color: white;
 	font-weight: 500;
 	font-size: 40px;
@@ -711,7 +731,7 @@ text-align: center;
 	text-align: center;
 
 }
-.blog_post{
+.blog-post{
 	padding: 10px 100px;
 }
 
@@ -722,11 +742,11 @@ text-align: center;
 	margin-left: 100px;
 }
 
-.blog_post img{
+.blog-post img{
 	padding-left: 80px;
 }
 
-.blog_post li{
+.blog-post li{
 	color: white;
 }
 

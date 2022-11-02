@@ -19,7 +19,7 @@ body{
       margin-bottom: 6px;
   }
   text {
-    pointer-events: none;
+    pointer-events:none;
   }
   
   .grandparent text {
@@ -29,6 +29,8 @@ body{
   rect {
     fill: none;
     stroke: #fff;
+    cursor: pointer;
+
   }
   
   rect.parent,
@@ -38,6 +40,7 @@ body{
   
   rect.parent {
       pointer-events: none;
+
   }
   
   .grandparent rect {
@@ -56,10 +59,18 @@ body{
   .children rect.parent {
     fill: #bbb;
     fill-opacity: .5;
+    cursor: pointer;
+
   }
   
   .children:hover rect.child {
     fill: #bbb;
+  }
+
+  .interactive-instruct{
+    color: white;
+    margin-left: 510px;
+    margin-bottom: -30px;
   }
   
  

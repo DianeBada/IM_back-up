@@ -19,7 +19,7 @@
 		<section class="container-fluid">
 			<section class="row d-flex align-items-center">
 				<section class="col-auto">
-					<a href="#" class="logo"><h1>BADABLING</h1></a>
+					<a href="index.html" class="logo"><h1>BADABLING</h1></a>
 				</section>
 				<nav class="text-right">
 					<input type = "checkbox" id = "check">
@@ -79,7 +79,6 @@
 			</section>
 		</section>
 		
-		  <!-- Swiper JS -->
 		
 	</section>
 </section>
@@ -134,34 +133,79 @@
 </section>
 
 </section>
-<section class="block-row data-section" id="section2"  data-parallax="scroll" data-image-src="images/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background.jpg">
+
+
+<section class="block-row data-section" id="section2"  data-parallax="scroll" data-image-src="images/BlogBG.jpg">
 	<section class="container">
 		<section class="row">
 			<section class="col-md-7">
 				<article class="styleguide_box">
-					<p class = "data-heading">Data Visualization Analysis </p>
+					<p class = "data-heading">Data Visualization Planning </p>
 					
 					<article class = "main-h" slot = "data-intro">
 					<p class = "data-map">
 
 						In represnting data in the form of visuals, I decided to go with the tree map.
 						A treemap is a visual method for displaying hierarchical data that uses nested rectangles to represent the branches of a tree diagram. Each rectangles has an area proportional to the amount of data it represents. 
-
+						In planning for my data visualisation, I had to come to terms with the notion of hierarchical data as well as tree maps with D3.js
 					</p>
+					<p class = "data-map">
+
+						As its name implies, the hierarchical database architecture is best suited for use scenarios where the primary goal of information collecting is based on a clear hierarchy, such as when a number of different employees at a corporation report to a single department.
+
+The structure of hierarchical databases is characterized by a tree-like organization, in which each subdirectory branch, or child record, may link to various other subdirectory branches. There is typically a root "parent" directory of data stored as records that links to various other subdirectory branches.
+
+While a parent record may contain numerous child records, according to the hierarchical database structure, each child record can only have one parent record.
+					</p>
+					<figure class = "u-photo"  slot = "tree-data">
+						<img src="images/Screenshot (157).png" alt="prototype of tree map used in constructing actual data visuals" class = "data-img">
+					</figure>
+					<p class = "data-caption">	Rough sketch of tree map: prototype.
+					</p>
+
 					<figure class = "u-photo"  slot = "tree-data">
 						<img src="images/dataplan.png" alt="prototype of tree map used in constructing actual data visuals" class = "data-img">
 					</figure>
 					<p class = "data-caption">	Rough sketch of tree map: prototype.
 					</p>
-					<p class = "title-explain">Explaination</p>
+					<p class = "data-map">
+
+						A treemap is a rectangular visualization for a hierarchal model as shown above. A fresh treemap layout is produced using the function generator d3.treemap(). The root of a hierarchy model is what we supply to the treemap layout when we call it. It then determines the location of each rectangle and assigns the four parameters x0, y0, x1, and y1 to each node. The top left and bottom right corners of the rectangle are represented by these attributes.
+
+						The values in the child's and parent's value attributes determine how much of a rectangle a kid occupies inside its parent's rectangle. For instance, the value property of the parent rectangle must match the total of the value properties of the child rectangles in order for the parent rectangle to include all of the rectangles for its children.
+
+
+					</p>
+
+					<p class = "data-map">
+						The following are the steps I did to create a successful-looking tree map:
+						<li class = "design-steps">From a d3.hierarchy model, retrieve the root element.</li>
+	<li class = "design-steps">If any model node's value attribute is missing, add it.
+	</li>		
+	<li class = "design-steps">Set the size and tiling strategy for a new treemap layout, if necessary. I chose the binary tiling techniques from the six available in d3.js while building up the tiling nodes.</li>
+	<li class = "design-steps">Call the treemap layout function, passing it the root of the hierarchy model. This creates x0, y0, x1, and y1 properties in each node.</li>
+	<li class = "design-steps">Render the rectangles using the x0, y0, x1, and y1 properties.</li>
+	<li class = "design-steps">Set the values property - This was achieved by using an API and calling the values via json.fetch()</li>
+
+
+
+
+
+					</p>
+					<p class = "title-explain">Additional Information on Data Visualisation Charts</p>
 
 					<p class = "data-explain"  >
 
 						The two data visualizations I've made in the Data Visualisation section, is a representation of movies data as well as games data. The Video game data set represents the top 100 video game sales and is grouped by the platform. Users can ready this tree map by looking at the categories which are all shaded by unique colours that is also displayed in the key section at the bottom. In each catergory of platform, the squares differ in size based on the value of the games. The most sold game in each group will have a large section of space in the square compared to the lowest or other games sales that are smaller in comparison.
 
 						The same thing can be said for the movie data-set. This represents the top 100 highest grossing films grouped by genre. In each genre category, there are squares that differ in size and this is a representation of their values. The movie with the biggest space or square in that genre category, is the highest grossing movie within their category and the oppsoite applies for the smallest sqaure.
-						 The reason I chose these two data sets to represent was due to the lack of API's based on Jewlery or anything related to the theme of my website. It was quite the mission finding anything related to what my website is about, and if I did find something, it wasn't much data that I could use to represent. In addition, they all required a fee in order for me to be given a unique key. As a result of this, I decided to compile my own data set based on figures I found on the internet. The new interactive chart that I've added, is remotely more associated the overall context of my website. The only problem with this though, is that this data is not derived from an API, which was one of the requirements. I thought this would be better than adding more charts that represented data that did not fit the context of the website. A woman with a plan.
-						 This new interactive map, is interactive in the sense that it allows one to zoom into categories. The chart is divided by continets and further sub-categorized by countries. This gives one an overview of how much the world spends on jewlery, as well as how much each continet spends, and lastly each country. I only received data from the contients and countries that were avaiable from the source of this information.
+						 The reason I chose these two data sets to represent was due to the lack of API's based on Jewlery or anything related to the theme of my website. It was quite the mission finding anything related to what my website is about, and if I did find something, it wasn't much data that I could use to represent. In addition, they all required a fee in order for me to be given a unique key.
+						 
+						 
+						 
+						 
+						 <!-- As a result of this, I decided to compile my own data set based on figures I found on the internet. The new interactive chart that I've added, is remotely more associated the overall context of my website. The only problem with this though, is that this data is not derived from an API, which was one of the requirements. I thought this would be better than adding more charts that represented data that did not fit the context of the website. A woman with a plan.
+						 This new interactive map, is interactive in the sense that it allows one to zoom into categories. The chart is divided by continets and further sub-categorized by countries. This gives one an overview of how much the world spends on jewlery, as well as how much each continet spends, and lastly each country. I only received data from the contients and countries that were avaiable from the source of this information. -->
 
 					</p>
 				</article>
@@ -170,11 +214,54 @@
 		</section>
 	</section>
 </section>
+
+<section class="block-row data-section" id="section2"  data-parallax="scroll" data-image-src="images/blackBG.jpg">
+	<section class="container">
+		<section class="row">
+			<section class="col-md-7">
+				<article class="styleguide_box">
+					<p class = "data-heading">Data Visualization Findings</p>
+					
+					<article class = "main-h" slot = "data-intro">
+					<p class = "data-map">
+
+						Through the data visualisation of the data set provided for top video game sales and top movie sales, I found that the platform/console Wii had taken up the biggest space, consisting of bigger squares compared to other consoles. In addition to that, the Wii Sports was found to be the top game to be sold at a vlue of 82 billion dollars. I then further did some research on the success of the Wii console and found that the sales figures, mostly attributable to accessibility, speak for themselves. Compared to the competing controllers' eight buttons apiece, the Wii mote+Nunchuck's basic four-button controls provided a more user-friendly experience. In addition, the Wii Sports was the most sold video game because of its motion-controlled minigames based on well recognized sports like tennis, bowling, baseball, and golf, Wii Sports was simple to comprehend. Each game was immediately understandable, requiring just a passing familiarity with the motion-sensing technology of the Wii remote to participate. The inclusive appeal of playing with family and friends was further enhanced by importing user-created Mii avatars into the proceedings.
+
+						The Wii's debut advertising served to further reinforce this. In contrast to its rivals, Nintendo employed television advertising that appealed to a larger audience by adopting strategies that encouraged parents and grandparents to play, with the internet ads using phrases like "Wii would want to play" and "Experience a new way to play."
+					</p>
+					<p class = "data-map">
+
+						Next we look at the top 100 Highest grossing films grouped by genre. The findings through this data visualisation was quite interesting due to the fact that the highest grossing films mostly fell within the Genre of action. What's also interesting to see is how the rise of action movies have increased along the years. The action movies from 1940 look very different to the ones now in 2022, and I can only credit this increase of action movies to the rise of technology and its improvements of special effects, green screens and so on. Another interesting point to note out is how the move towards technology intensive movies, such as action movies, because the movies became, "relatively cheap" to produce. Innovations such as Computer Generated Imagery (CGI) made including action scene cheaper. Nowadays you don't actually have to blow up an actual building in order to blow up in your movie, thus prompting directors/producers to include action sequence when prior to this, it would have been considered an unjuztifiable expense.
+					</p>
+					<section class = "design-row">
+
+						<section class = "design-coloumn">
+					<figure class = "u-photo"  slot = "data-findings">
+						<img src="images/Screenshot (159).png" alt="prototype of tree map used in constructing actual data visuals" class = "data-img">
+					</figure>
+					<p class = "data-caption">	Video games grouped by dominat console - Wii
+					</p>
+				</section>
+				<section class = "design-coloumn">
+					<figure class = "u-photo"  slot = "data-findings">
+						<img src="images/Screenshot (160).png" alt="prototype of tree map used in constructing actual data visuals" class = "data-img">
+					</figure>
+					<p class = "data-caption">	Films grouped by dominat genre - Action
+					</p>
+				</section>
+					
+				</section>
+					</article>
+				</article>
+			</section>
+		</section>
+	</section>
+</section>
 </main>
 
 
-<footer class="footer">
-	&copy; BADABLING.com
+<footer class="footer h-card">
+	<p class = "u-email ">&copy; BADABLING.com</p>
 </footer>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>

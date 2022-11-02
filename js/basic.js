@@ -4,9 +4,9 @@ $(document).ready(function(){
 
 })
 
-nav_icon = document.getElementById('burger_button');
-  main_menu = document.getElementById('main_menu');
-  menuList = document.querySelectorAll('.main_menu ul li a');
+nav_icon = document.getElementById('burger-button');
+  main_menu = document.getElementById('main-menu');
+  menuList = document.querySelectorAll('.main-menu ul li a');
   current = 1 
   nav_icon.addEventListener('click',function(){
     if(current == 1){

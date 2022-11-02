@@ -82,14 +82,14 @@ h1{
 
 
 }
-.nav_icon{
+.nav-icon{
 	color: white;
 	font-size: 35px;
 	line-height: 1;
 	display:block;
 
 }
-.nav_icon i{
+.nav-icon i{
 	top: 0;
 	margin-top: -115px;
 	margin-right: -750px;
@@ -383,7 +383,7 @@ h1{
   }
   
   .card-btn:hover {
-	background: #ff7d7d;
+	background: #785F37;
 	color: #fff;
   }
   
@@ -685,6 +685,11 @@ padding-top: 200px;
 	margin-right: 100px;
 	margin-left: 10px;
 }
+.design-steps{
+	color: white;
+	margin-right: 100px;
+	margin-left: 10px;
+}
 
 .data-img{
 width:600px;
@@ -708,11 +713,20 @@ margin-left: 300px;
 .title-explain
 {
 	color: white;
-	margin-left: 580px;
+	margin-left: 10px;
 	font-weight: 600px;
 	font-size: 30px;
 }
 
+.design-coloumn{
+	flex: 60%;
+	padding: 3px;
+	margin-left: -330px;
+}
+.design-row{
+	display: flex;
+	
+}
 
 
 
@@ -779,6 +793,11 @@ text-align: center;
 }
 .card-stats{
 	grid-template-areas: stats;
+}
+
+#footer-data{
+	margin-top: 30px;
+	margin-bottom: -90px;
 }
 
 

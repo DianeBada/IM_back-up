@@ -207,8 +207,8 @@ function getData(data) {
   legend.selectAll("*").remove();
 
   // Gets categories
-  var cats = root.leaves().map((nodes) => nodes.data.category);
-  cats = cats.filter((cat, i, self) => self.indexOf(cat) === i);
+  //  var cats = root.leaves().map((nodes) => nodes.data.category);
+  // cats = cats.filter((cat, i, self) => self.indexOf(cat) === i);
 
   // Legend sizes, offset, and spacing
   const LEG_OFFSET = 8;
@@ -225,7 +225,8 @@ function getData(data) {
   const LEG_EL_PER_ROW = Math.floor(LEG_WIDTH / legSpacing.h);
 
   // Legend
-  const legG = legend
+
+   const legG = legend
     .selectAll()
     .data(cats)
     .enter()
@@ -233,7 +234,7 @@ function getData(data) {
     .attr("transform", function (d, i) {
       return (
         "translate(" +
-        (i % LEG_EL_PER_ROW) * legSpacing.h +
+        (i % LEG_EL_PER_ROW) * legSpacing.h + 
         "," +
         (Math.floor(i / LEG_EL_PER_ROW) * LEG_RECT_SIZE +
           legSpacing.v * Math.floor(i / LEG_EL_PER_ROW)) +

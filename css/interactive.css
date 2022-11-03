@@ -29,23 +29,31 @@ body{
   rect {
     fill: none;
     stroke: #fff;
+
+  }
+  
+  .children{
+    cursor: pointer;
+
+  }
+  rect.parent,
+  .grandparent rect {
+    stroke-width: 2px;
     cursor: pointer;
 
   }
   
-  rect.parent,
-  .grandparent rect {
-    stroke-width: 2px;
-  }
-  
   rect.parent {
       pointer-events: none;
+     
+
 
   }
   
   .grandparent rect {
     fill: orange;
   }
+
   
   .grandparent:hover rect {
     fill: #ee9700;

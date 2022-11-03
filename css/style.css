@@ -78,18 +78,18 @@ h1{
 	display: flex;
 	font-size: 30px;
 	margin-top: -15px;
-	font-weight: 500;;
+	font-weight: 500;
 
 
 }
-.nav-icon{
+.nav_icon{
 	color: white;
 	font-size: 35px;
 	line-height: 1;
 	display:block;
 
 }
-.nav-icon i{
+.nav_icon i{
 	top: 0;
 	margin-top: -115px;
 	margin-right: -750px;

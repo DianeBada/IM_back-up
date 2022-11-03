@@ -441,24 +441,31 @@ h1{
 	left: 0;
 	transform: rotate(180deg);
 	size: 15px;
+	color:#785F37;
 
   }
   
   .nxt-btn {
 	right: 0;
 	size: 15px;
+	color:#785F37;
+
 
   }
   
   .pre-btn img,
   .nxt-btn img {
 	opacity: 0.5;
+	color:#785F37;
+
 
   }
   
   .pre-btn:hover img,
   .nxt-btn:hover img {
 	opacity: 2;
+	color:#785F37;
+
   }
   
   .collection-container {
@@ -726,6 +733,22 @@ margin-left: 300px;
 .design-row{
 	display: flex;
 	
+}
+
+.design-coloumn-inter{
+	flex: 33.3%;
+	padding: 5px;
+	margin-left: -350px;
+}
+
+.design-row-inter{
+	display: flex;
+	
+}
+
+.data-set{
+	color: white;
+	margin-left: 10px;
 }
 
 

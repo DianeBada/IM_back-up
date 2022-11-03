@@ -135,7 +135,7 @@
 </section>
 
 
-<section class="block-row data-section" id="section2"  data-parallax="scroll" data-image-src="images/BlogBG.jpg">
+<section class="block-row data-section" id="section2"  data-parallax="scroll" data-image-src="images/BlogTemplateImg.jpg">
 	<section class="container">
 		<section class="row">
 			<section class="col-md-7">
@@ -246,12 +246,77 @@ While a parent record may contain numerous child records, according to the hiera
 					<figure class = "u-photo"  slot = "data-findings">
 						<img src="images/Screenshot (160).png" alt="prototype of tree map used in constructing actual data visuals" class = "data-img">
 					</figure>
-					<p class = "data-caption">	Films grouped by dominat genre - Action
+					<p class = "data-caption">	Films grouped by dominant genre - Action
 					</p>
 				</section>
 					
 				</section>
 					</article>
+				</article>
+			</section>
+		</section>
+	</section>
+</section>
+
+<section class="block-row data-section" id="section2"  data-parallax="scroll" data-image-src="images/blackBG.jpg">
+	<section class="container">
+		<section class="row">
+			<section class="col-md-7">
+				<article class="styleguide_box">
+					<p class = "data-heading">Interactive Data Visualization Planning</p>
+					
+					<article class = "main-h" slot = "data-intro">
+					<p class = "data-map">
+
+						While planning for my interactive data visualisation, I thought it would be effective to try and find a way in which to make a treemap, which I had used for my two previous static data visualisation, interactive.
+
+						In trying to find a way to do so, I came across a series of examples, specifically from the d3.js website. The images I have included below is considered interactive as it has the property of clicking on certain elemnts, resulting in zoomable data. The elemnts of being able to zoom is what would make my chart interactive.
+					</p>
+					<p class = "data-map">
+
+						Using the examples below, I began planning out how I would get my charts to resemble the one below. Firstly, I knew that just as my static data used hierarchical data, the same would apply here. Additionally, instead of a parent child like relationship that the data had in my static data visualisations, it would be a grandparent-parent-child relationship in the interactive data visualisations. This was a crucial part for me to understand as this time, I was going to be the one constructing a Json file to manually insert the data I found from a website, as I could not come across any jewllery APIs and the ones related to jewelrywere not necessarily accessible and simple to use and implement.I went ahead retrieving values from the site and then placing them in a hierarchical data structure like this:
+
+						<p class = "data-set">	"key": "Japan",</p>
+			<p class = "data-set">"region": "Asia",</p>
+			<p class = "data-set">"subregion": "Eastern Asia",</p>
+			<p class = "data-set">"value": 934000000</p>		
+		</p>
+	
+		<p class = "data-map">
+
+					In structuring the data like this, I could then group the data firstly, by World - which would be the grandparent or in other terms, the root. All the values generated from the different continents and countries would be equivalent to the value of the World. Secondly, I grouped the data by continents - The Americas, Asia, Europe and Oceania (Australia) and finally grouped them by countries. I can call this a interactive data because it allows fr more data to be explored. One can analyse the world expenditure on jewelleries or one can analyse specific continents or take it a step further and click on the continents to see the countries that are part of the World's expenditure on jewelry. The only difference between the images below and the actual implementation of my interactive data visualisation, is the use of subregions. Due to the data I collected not having enough countries from the same subregions, I decided I would exclude that and go straight from continent to countries. 
+		</p>	 
+					<section class = "design-row-inter">
+
+						<section class = "design-coloumn-inter">
+					<figure class = "u-photo"  slot = "data-findings">
+						<img src="images/interactivePlanning1.png" alt="prototype of tree map used in constructing actual data visuals" class = "data-img">
+					</figure>
+					<p class = "data-caption">	Clicked on the continent "Americas" 
+					</p>
+				</section>
+				<section class = "design-coloumn-inter">
+					<figure class = "u-photo"  slot = "data-findings">
+						<img src="images/interactivePlanning2.png" alt="prototype of tree map used in constructing actual data visuals" class = "data-img">
+					</figure>
+					<p class = "data-caption">	Zoomed in on the subregions in the Americas
+					</p>
+				</section>
+				
+					
+				</section>
+			
+
+				
+					</article>
+					<p class = "title-explain">Interactive Data Visualisation Findings</p>
+
+					<p class = "data-explain"  >
+						Sales of high-end jewellery and watches have increased hugely over the past two years. Mintel, one of the world's leading market research agencies recently discovered that jewellery and watch sales have rocketed up to 66 percent over 2019 and 2020, an increase of 5 percent on the previous two years.It may come as little surprise that top of the leaderboard for jewellery and wristwatch sales is economic superpower - China.
+‍
+With the largest economy on the planet, the Chinese market spend an astonishing $111.46 billion on jewellery and watches on a yearly basis. Second largest spender is, you guessed it, the United States of America. Nowhere near as much as China, but with a considerably smaller population, the USA as a whole spends, on average, $61.76 billion on jewellery or watches each year. This is an incredible amount of money and again shows how huge the market for jewellery and watches is around the globe. Hong Kong comes in at third in the list, with a total of $20.9 billion spending most on jewellery and watches on a yearly basis.
+					</p>
+
 				</article>
 			</section>
 		</section>

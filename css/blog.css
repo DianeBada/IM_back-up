@@ -28,13 +28,19 @@ body{
 a{
   text-decoration: none;
 }
+.blog-title{
+  color: white;
+  margin-left: 580px;
+  font-size: 50px;
+  margin-top: -20px;
+}
 .card {
     display: grid;
-    grid-template-columns: 200px;
-    grid-template-rows: 200px 200px 70px;
+    grid-template-columns: 10px;
+    grid-template-rows: 80px 80px 80px;
     grid-template-areas: "image" "text" "stats";
   
-    border-radius: 18px;
+    border-radius: 38px;
     background: white;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     font-family: roboto;
@@ -42,8 +48,9 @@ a{
   
     transition: 0.5s ease;
     cursor: pointer;
-    margin:30px;
+    margin:10px;
     margin-left: 0px;
+    margin-bottom: 90px;
   }
   .card-image {
     grid-area: image;

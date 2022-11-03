@@ -20,6 +20,7 @@ function _legend(DOM,html,margin,color)
   display: inline-flex;
   align-items: center;
   margin-right: 1em;
+  color: white;
 }
 
 .${id}::before {
@@ -28,16 +29,19 @@ function _legend(DOM,html,margin,color)
   height: 1em;
   margin-right: 0.5em;
   background: var(--color);
+  color: white;
+
+
 }
 
-</style><div style="display: flex; align-items: center; min-height: 33px; font: 10px sans-serif; margin-left: ${margin.left}px;"><div>${color.domain().map(region => html`<span class="${id}" style="--color: ${color(region)}">${document.createTextNode(region)}</span>`)}`;
+</style><div style="display: flex; align-items: center; min-height: 33px; font: 10px sans-serif; margin-left: ${margin.left}px;"><div>${color.domain().map(region => html`<span class="${id}" style="--color: ${color(region)}">${document.createTextNode(region)}</span>  `)}`;
 }
 
 
 function _chart(d3,width,height,xAxis,yAxis,grid,dataAt,x,y,radius,color)
 {
   const svg = d3.create("svg")
-      .attr("viewBox", [0, 0, width, height]);
+      .attr("viewBox", [0, 10, width, height]);
 
   svg.append("g")
       .call(xAxis);
@@ -80,6 +84,7 @@ function _update(chart,currentData){return(
 
 function _currentData(dataAt,date){return(
 dataAt(date)
+
 )}
 
 function _x(d3,margin,width){return(
@@ -105,7 +110,7 @@ g => g
     .call(g => g.select(".domain").remove())
     .call(g => g.append("text")
         .attr("x", width)
-        .attr("y", margin.bottom - 4)
+        .attr("y", margin.bottom - 20)
         .attr("fill", "white")
        .attr("text-anchor", "end")
         .text("Income per capita (dollars) →"))

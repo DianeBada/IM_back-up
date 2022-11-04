@@ -578,8 +578,16 @@ padding-left: 50px;
 
 .data-text p{
 	color: white;
-  margin-right: 30px;
-	margin-left: 210px;
+  /* margin-right: 30px; */
+  margin-left: 200px;
+}
+
+.data-meaning{
+
+	color: white;
+  margin-left: 210px;
+  margin-right: 210px;
+
 
 }
 
@@ -595,6 +603,15 @@ padding-left: 50px;
 .data-art-caption{
 margin-right: 300px;	
 margin-left: 300px;
+}
+
+.data-art-two{
+  width: 300px;
+  margin-left: 170px;
+}
+
+.datart-explain{
+  margin-left: 190px;
 }
   }
   

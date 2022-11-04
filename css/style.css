@@ -717,6 +717,14 @@ margin-left: 300px;
 		margin-left: 500px;
 }
 
+.data-art-two{
+
+	width:600px;
+height: 400px;
+margin-left: 300px;
+
+}
+
 .data-caption{
 	color: white;
 	margin-left: 500px;
@@ -742,6 +750,15 @@ margin-left: 300px;
 	font-weight: 600px;
 	font-size: 30px;
 }
+
+.datart-explain{
+
+	color: white;
+	margin-left: 10px;
+	font-weight: 600px;
+	font-size: 30px;
+}
+
 
 .design-coloumn{
 	flex: 60%;
@@ -776,6 +793,16 @@ margin-left: 300px;
 	padding-right: 90px;
 	margin-right: 80px;
 
+
+}
+
+.data-meaning{
+
+	color: white;
+	margin-left: 10px;
+	padding-left: 0px;
+	padding-right: 90px;
+	margin-right: 80px;
 
 }
 

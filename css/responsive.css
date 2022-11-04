@@ -89,7 +89,7 @@ position: absolute;
   
  
 
-  @media (max-width: 1000px){
+  @media (max-width: 1200px){
     .burger-button{
       display: block;
       margin-right: 10px;
@@ -158,6 +158,17 @@ position: absolute;
     .container_box textarea{
       height: 209px;
 
+    }
+
+    .blog-title
+    {
+      margin-left: 400px;
+    }
+
+    .service-instruction{
+      margin-left: 300px;
+      white-space: nowrap;
+      font-size: 15px;
     }
 
     .contact h2{
@@ -243,19 +254,22 @@ position: absolute;
  
     .service-container{
       position: relative;
-      width: 60px;
+      width: 380px;
       height: 800px;
-      margin-right: 450px;
-    
+      margin-right: 10px;
     }
 
     .service-title {
-      color: white;
       padding-bottom: 100px;
-      text-align: center;
-      margin-left: 200px;
+      margin-left: 10px;
       font-size: 50px;
-      margin-top: -100px;
+      margin-top: -10px;
+    }
+
+    .service-instruction{
+      margin-left: 50px;
+      white-space: nowrap;
+      font-size: 15px;
     }
 
     .picture-content p{
@@ -267,13 +281,26 @@ position: absolute;
       height: 20%;
     }
 
+    .container-box{
+
+      width: 300px;
+
+    }
+    .button-hold{
+      margin-left: -146px;
+    }
+
     #chart{
 
       margin-left: 50px;
-      width: 3x;
+      width: 3px;
 
       
 
+    }
+    .contact h2{
+      
+      margin-left: 60px;
     }
 
     #tree-map svg.games{
@@ -316,7 +343,259 @@ position: absolute;
       margin-left: 10px ;
     }
 
+    /***********Blog*******/
 
+    .blog-title{
+      color: white;
+      margin-left: 85px;
+      font-size: 45px;
+      margin-top: -40px;
+    }
+
+
+    .card {
+      display: grid;
+      grid-template-columns: 350px;
+      grid-template-rows: 100px 100px 100px;
+      grid-template-areas: "image" "text" "stats";
+    
+      border-radius: 20px;
+      background: white;
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+      font-family: roboto;
+      
+    
+      transition: 0.5s ease;
+      cursor: pointer;
+      margin:10px;
+      margin-left: 1px;
+      margin-bottom: 90px;
+    }
+    .card-image {
+      grid-area: image;
+      background: url("img1.jpg");
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      background-size: cover;
+    }
+    
+    .card-text {
+      grid-area: text;
+      margin: 10px;
+
+    }
+    .card-text .date {
+      color: #785F37;
+      font-size:13px;
+    }
+    .card-text p {
+      color: grey;
+      font-size:10px;
+      font-weight: 300;
+      margin-left: 100px;
+      padding-right: 80px;
+    }
+    .card-text h2 {
+      margin-top:0px;
+      font-size:15px;
+      color: black;
+    }
+    .card-stats {
+      grid-area: stats; 
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      grid-template-rows: 1fr;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      background: #785F37;
+      margin-top: 300px;
+      
+  
+    }
+    .card-stats .stat {
+      padding:10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+    }
+
+
+    
+#games, #movies, #jewl{
+
+	margin-bottom: -45px;
+  margin-top: 20px;
+
+}
+
+.interactive-instruct{
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+
+/*************DESIGN SECTION********/
+
+.styleguide-heading{
+
+  font-size: 50px;
+
+}
+.style-pic img{
+	margin-left: 10px;
+  margin-right: 10px;
+  width: 250px;
+  float: left;
+
+}
+.font-text{
+	color: white;
+  margin-top: 40px;
+	/* float: right; */
+
+	
+}
+.font-intro p{
+	/* padding: 300px 30px; */
+	margin-right: 100px;
+	margin-left: -20px;
+	
+}
+
+.back-image img {
+	width: 250px;
+	height: 200px;
+	float: left;
+}
+
+.back-image{
+	margin-top: 40px;
+	margin-left: 10px;
+
+}
+.jewl-image img{
+	width: 250px;
+	height: 250px;
+	float: left;
+	margin-top: -10px;
+
+	
+}
+.jewl-image{
+	margin-left: 10px;
+
+
+}
+
+.data-heading{
+	margin-top: -170px;
+	font-weight: 700;
+	font-size: 50px;
+	text-align: center;
+	padding-top: 250px;
+}
+
+.data-map{
+	color: white;
+	margin-right: 80px;
+	margin-left: 80px;
+}
+.design-steps{
+	color: white;
+	margin-right: 100px;
+	margin-left: 10px;
+}
+
+.data-img{
+width:250px;
+height: 300px;
+margin-left: 250px;
+padding-left: 50px;
+}
+
+.datavis-img{
+  width:280px;
+height: 300px;
+margin-left: 10px;
+padding-left: 50px;
+
+}
+
+.datavis-caption{
+  margin-left: 70px;
+
+}
+
+.data-caption{
+	color: white;
+	margin-left: 340px;
+}
+
+.data-explain {
+	color: white;
+	
+	padding-left: 0px;
+  margin-right: 10px;
+	margin-left: 80px;
+	
+}
+
+.title-explain
+{
+	color: white;
+	margin-left: 10px;
+	font-weight: 600px;
+	font-size: 30px;
+}
+
+.design-coloumn{
+	flex: 60%;
+	padding: 3px;
+	margin-left: -330px;
+}
+.design-row{
+	display: flex;
+	
+}
+
+.design-coloumn-inter{
+	flex: 33.3%;
+	padding: 5px;
+	margin-left: -350px;
+}
+
+.design-row-inter{
+	display: flex;
+	
+}
+
+.data-set{
+	color: white;
+	margin-left: 10px;
+}
+
+.data-text p{
+	color: white;
+  margin-right: 30px;
+	margin-left: 210px;
+
+}
+
+.data-art-img img{
+
+  width: 250px;
+	height: 200px;
+	float: left;
+  margin-left: 180px;
+
+}
+
+.data-art-caption{
+margin-right: 300px;	
+margin-left: 300px;
+}
   }
   
   

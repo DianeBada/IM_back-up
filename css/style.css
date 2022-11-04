@@ -355,16 +355,7 @@ margin-top: -5px;
 	object-fit: cover;
   }
   
-  .discount-tag {
-	position: absolute;
-	background: #fff;
-	padding: 5px;
-	border-radius: 5px;
-	color: #ff7d7d;
-	right: 10px;
-	top: 10px;
-	text-transform: capitalize;
-  }
+  
   
   .card-btn {
 	position: absolute;
@@ -460,7 +451,7 @@ margin-top: -5px;
   
   .pre-btn img,
   .nxt-btn img {
-	opacity: 0.5;
+	opacity: 1;
 	color:#785F37;
 
 
@@ -669,6 +660,12 @@ padding-top: 200px;
 	margin-left: 10px;
 
 }
+
+.data-art-img img{
+	width: 300px;
+	height: 200px;
+	float: left;
+}
 .jewl-image img{
 	width: 300px;
 	height: 250px;
@@ -709,7 +706,23 @@ height: 400px;
 margin-left: 300px;
 }
 
+.datavis-img{
+	width:600px;
+height: 400px;
+margin-left: 300px;
+}
+.datavis-caption{
+	
+		color: white;
+		margin-left: 500px;
+}
+
 .data-caption{
+	color: white;
+	margin-left: 500px;
+}
+
+.data-art-caption{
 	color: white;
 	margin-left: 500px;
 }
@@ -858,4 +871,8 @@ text-align: center;
 	margin-bottom: -90px;
 }
 
+#games, #movies, #jewl{
 
+	margin-top: 40px;
+
+}

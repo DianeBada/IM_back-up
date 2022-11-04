@@ -34,7 +34,7 @@ h1{
 	z-index: 1000;
 	padding: 20px 30px;
 	background: #785F37;
-	height: 15%;
+	height: 10%;
 }
 .block-row{
 	min-height: 100vh;
@@ -54,6 +54,10 @@ h1{
 	margin-bottom: 0;
 	list-style: none;
 	margin-right: 40px;
+	text-decoration: none;
+	color: #fff;
+
+
 
 
 }
@@ -64,8 +68,9 @@ h1{
 	padding-top: 10px;
 	word-spacing: 30px;
 	padding-right: 40px;
-	margin-top: -90px;
+	margin-top: -78px;
 	font-size: 25px;
+	text-decoration: none;
 
 
 	
@@ -82,14 +87,14 @@ h1{
 
 
 }
-.nav_icon{
+.nav-icon{
 	color: white;
 	font-size: 35px;
 	line-height: 1;
 	display:block;
 
 }
-.nav_icon i{
+.nav-icon i{
 	top: 0;
 	margin-top: -115px;
 	margin-right: -750px;
@@ -169,11 +174,11 @@ h1{
 	text-decoration: none;
 	font-size: 30px;
 	font-weight: 700;
+
 	
 }
-.logo h1{
-	margin-top: 10px;
-
+.logo p{
+margin-top: -5px;
 }
 
 
@@ -547,7 +552,7 @@ h1{
 	color: #fff;
 	background:#785F37;
 }
-.contact_heading{
+.contact-heading{
 	color: white;
 	font-size: 60px;
 	font-weight: 600px;
@@ -784,7 +789,7 @@ text-align: center;
 	padding: 10px 100px;
 }
 
-.blog1_text{
+.blog1-text{
 	color: white;
 	font-size: 20px;
 	margin-right: 100px;
@@ -797,6 +802,13 @@ text-align: center;
 
 .blog-post li{
 	color: white;
+}
+
+.source-links{
+	color: white;
+	font-size: 20px;
+	margin-right: 100px;
+	margin-left: 100px;
 }
 
 .blog-card{
@@ -820,6 +832,19 @@ text-align: center;
 	background: url("/images/DataVisualzation.png");
 
 }
+
+.blog-img{
+	width:600px;
+	height: 400px;
+	margin-left: 140px;
+	}
+	
+	.blog-caption{
+		color: white;
+		margin-left: 30px;
+		padding-right: 80px;
+		padding-left: 80px;
+	}
 
 .card_text{
 	grid-template-areas: text;

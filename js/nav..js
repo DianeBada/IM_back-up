@@ -5,7 +5,6 @@ bar += '<section class="container-fluid">';
 bar += '<section class="row d-flex align-items-center">';
 bar += '<section class="col-auto">';
     // bar += 'section class="row d-flex align-items-center"';
-    bar += '<section class="col-auto">';
     bar += '<a href="index.html" class="logo"><h1>BADABLING</h1></a>';
     bar += '</section>';
     bar += '<nav class="text_right">';
@@ -29,6 +28,8 @@ bar += '<section class="col-auto">';
 
 function getValueByName(name) {
     var url = document.getElementById('nav-bar').getAttribute('src');
+   const navlinks = document.querySelector('nav-sections');
+   
     var param = new Array();
     if (url.indexOf("?") != -1) {
         var source = url.split("?")[1];

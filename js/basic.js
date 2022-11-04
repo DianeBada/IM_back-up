@@ -8,7 +8,7 @@ nav_icon = document.getElementById('burger-button');
   main_menu = document.getElementById('main-menu');
   menuList = document.querySelectorAll('.main-menu ul li a');
   current = 1 
-  nav_icon.addEventListener('click',function(){
+  nav-icon.addEventListener('click',function(){
     if(current == 1){
       main_menu.classList.add("active");
       current = 2

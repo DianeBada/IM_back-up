@@ -186,31 +186,47 @@ position: absolute;
 
   /****** 768****/
   @media (max-width: 768px){
+   
     .burger-button{
       display: block;
-      font-size: 40px;
-      padding-top: 15px;
-      
-
+      padding: 30px 30px;
+      color: white;
+      margin-top: -40px;
+      margin-right: -30px;
     } 
-    .nav-sections li{
-      position: fixed;
-      text-align: center;
-      top:50px;
-      left: -125%;
-      margin-left: 0px; 
-      display: none;
-      
-    transition: all 1s;
-      
-    }
-    #check:checked  ~ ul {
-      left:0;
   
-    }
 
-    .logo h1{
-      margin-left: -20px;
+    nav ul{
+      position: fixed;
+      width: 100%;
+      background-color: rgb(27, 27, 27);
+      height: 100%;
+      text-align: center;
+      top:68px;
+      margin-left: 0px; 
+    left: -110%;
+    transition: all 1s;
+    }
+  
+    
+   nav ul li{
+     display: block;
+     padding: 30px 30px;
+   }  
+
+   nav ul li a {
+     font-size: 25px;
+     text-transform: uppercase;
+     margin-left: -90px;
+   }
+
+   #check:checked  ~ ul {
+     left:0;
+ 
+   }
+
+    .logo p{
+      margin-left: -23px;
     }
     .banner{
       font-size: 30px; 

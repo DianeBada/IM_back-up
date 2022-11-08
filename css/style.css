@@ -26,7 +26,7 @@ h1{
 
 }
 /*header*/
-.header{
+/* .header{
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -35,7 +35,7 @@ h1{
 	padding: 20px 30px;
 	background: #785F37;
 	height: 10%;
-}
+} */
 .block-row{
 	min-height: 100vh;
 	display: flex;
@@ -46,9 +46,9 @@ h1{
 	/*background-size: cover;*/
 }
 
-.nav-sections{
+/* .nav-sections{
 	position: relative;
-	display: flex;
+	display: block;
 	float: right;
 	margin-top: 5px;
 	margin-bottom: 0;
@@ -60,22 +60,48 @@ h1{
 
 
 
-}
+} */
 
-.nav-sections li{
+/* nav{
+	position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+	z-index: 999;
+    margin-top:0px;
+}
+.nav ul{
 	position: relative;
-	display: inline-block;
+	display: block;
 	padding-top: 10px;
 	word-spacing: 30px;
 	padding-right: 40px;
 	margin-top: -78px;
 	font-size: 25px;
 	text-decoration: none;
-
+	position: relative;
+	display: block;
+	float: right;
+	margin-top: 5px;
+	margin-bottom: 0;
+	list-style: none;
+	margin-right: 40px;
 
 	
 	
 }
+nav ul li{
+	position: relative;
+	display: inline-block;
+	padding-top: 10px;
+	text-decoration: none;
+    align-items: center;
+    position: relative;
+  }
+
+  nav ul li, a{
+
+  }
 
 .text-right ul li a{
 	text-decoration: none;
@@ -86,7 +112,53 @@ h1{
 	font-weight: 500;
 
 
+} */
+
+nav{
+
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	padding: 20px 30px; 
+	background: #785F37;
+	height: 12%;
+	display: block;
+
+  
+
+ }
+
+ nav ul {
+   position: relative;
+  display: block;
+  float: right;
+  margin-top: 5px;
+  margin-bottom: 0;
+  list-style: none;
+  margin-right: 40px;
+
 }
+
+nav ul li{
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+
+}
+
+nav ul li a{
+	font-size: 25px;
+	text-decoration: none;
+	color: white;
+  
+  }
+nav li{
+  margin-left: 30px;
+}
+ 
 .nav-icon{
 	color: white;
 	font-size: 35px;
@@ -120,7 +192,7 @@ h1{
   }
 
 
-.main-menu{
+/* .main-menu{
 	position: fixed;
 	right: 0;
 	top:-10px;
@@ -131,8 +203,8 @@ h1{
 	width: 250px;
 	transition: all 0.3s ease-in-out;
 	
-}
-.main-menu.active{
+} */
+/* .main-menu.active{
 	height: 100vh;
 }
 .main-menu ul{
@@ -168,17 +240,21 @@ h1{
 }
 .main-menu.active .menu_bg{
 	transform: scale(120);
-}
+} */
 .logo{
 	color: white;
 	text-decoration: none;
 	font-size: 30px;
 	font-weight: 700;
+	position: relative;
+	left: 0px;
+	display: inline-block;
+
 
 	
 }
 .logo p{
-margin-top: -5px;
+margin-top: 10px;
 }
 
 

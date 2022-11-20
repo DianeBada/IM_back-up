@@ -96,6 +96,13 @@ body {
 
 
   }
+
+  .story-center
+  {
+    color: white;
+    padding-left: 10px;
+    
+  }
   .mt-3{
     padding-left: 550px;
   }

@@ -80,5 +80,21 @@ body{
     margin-left: 510px;
     margin-bottom: -30px;
   }
+
+  .interactive-narrative{
+    color: white;
+     margin-left: 30px;
+   
+
+
+  }
+
+  .interactive-title{
+    color: white;
+    margin-left: 410px;
+    font-size: 30px;
+    font-weight: 600;
+
+  }
   
  

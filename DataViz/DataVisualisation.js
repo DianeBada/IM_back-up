@@ -6,11 +6,14 @@ const DS = {
   games: {
     title: "Video Game Sales",
     desc: "Top 100 Video Games Sales Grouped by Platform",
+    story:"This tree map shows video games that have sold the highest number of software units worldwide. The best-selling video game to date is Minecraft, a sandbox game released by Mojang in May 2009 for a wide range of PC, mobile and console platforms, selling more than 238 million copies across all platforms. Grand Theft Auto V and EA's Tetris are the only other known video games to have sold over 100 million copies. The best-selling game on a single platform is Wii Sports, with nearly 83 million sales for the Wii console. ",
     url: PATH + "video-game-sales-data.json"
   },
   movies: {
     title: "Movies Sales",
     desc: "Top 100 Highest Grossing Films Grouped By Genre",
+    story: "This tree map shows the top box-office earners (ranked by both the nominal and real value of their revenue), a chart of high-grossing films by calendar year, a timeline showing the transition of the highest-grossing film record, and a chart of the highest-grossing film franchises and series. All charts are ranked by international theatrical box-office performance where possible, excluding income derived from home video, broadcasting rights, and merchandise.",
+
     url: PATH + "movie-data.json"
   },
   ksPledges: {
@@ -23,6 +26,7 @@ const DS = {
 // Gets elements
 const title = d3.select("#title");
 const desc = d3.select("#description");
+const story = d3.select("#story");
 
 // Margins
 const margin = { top: 5, right: 5, bottom: 5, left: 5 };
@@ -60,9 +64,10 @@ const mousemove = function (e) {
   const name = e.target.getAttribute("data-name");
   const category = e.target.getAttribute("data-category");
   const value = e.target.getAttribute("data-value");
-  var html = "<h6>" + name + "</h6>";
+  var html = "<h2>" + name + "</h2>";
   html += "<p><b>Category</b>: " + category + "</p>";
   html += "<p><b>Value</b>: " +  "$" + value + " Billion" + "</p>";
+  //document.write(num.toFixed(1)+C;
   const offset = svg.attr("class") == "games" ? { x: 150, y: 80 } : svg.attr("class") == "movies" ? { x: 150, y: 100 } : { x: 150, y: 125 }
   
   tooltip
@@ -109,6 +114,7 @@ function updatePage(q = "games") {
   if (q === "movies") {
     title.text(DS.movies.title);
     desc.text(DS.movies.desc);
+    story.text(DS.movies.story);
     svg.attr("class", "movies");
     legend.attr("height", 60);
     d3.json(DS.movies.url).then((data) => getData(data));
@@ -121,6 +127,7 @@ function updatePage(q = "games") {
   } else if (q === "games") {
     title.text(DS.games.title);
     desc.text(DS.games.desc);
+    story.text(DS.games.story);
     svg.attr("class", "games");
     legend.attr("height", 90);
     d3.json(DS.games.url).then((data) => getData(data));

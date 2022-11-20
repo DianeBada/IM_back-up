@@ -11,7 +11,7 @@ window.addEventListener('message', function(e) {
 var defaults = {
   margin: {top: 25, right: 5, bottom: 0, left: 5},
   rootname: "TOP",
-  format: "$" + ",d" ,
+  format: "$" + ".2s" + "~s",
   title: "",
   width: 960,
   height: 650
@@ -20,7 +20,7 @@ var defaults = {
 function main(o, data) {
 var root,
     opts = $.extend(true, {}, defaults, o),
-    formatNumber = d3.format((opts.format)),
+    formatNumber = d3.format("0.2s") ,
     rname = opts.rootname,
     margin = opts.margin,
     theight = 36 + 16;
@@ -236,9 +236,9 @@ if (window.location.hash === "") {
       if (!err) {
           console.log(res);
           var data = d3.nest().key(function(d) { return d.region; }).entries(res);
-          main({title: "World Expenditure on Jewelry and Watches"}, {key: "World", values: data});
+          main({title: "World Expenditure on Jewelry and Watches"}, {key: "World (G = Billions)", values: data}, {key: " G = Billions" });
       }
   });
 
-  document.write(def.replace (/G/, "B"));
+
 }

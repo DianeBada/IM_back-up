@@ -677,6 +677,10 @@ margin-left: 300px;
 
 }
 
+.data-art-caption-two{
+margin-left: 500px;
+}
+
 .data-caption{
 	color: white;
 	margin-left: 500px;
@@ -684,7 +688,7 @@ margin-left: 300px;
 
 .data-art-caption{
 	color: white;
-	margin-left: 500px;
+	margin-left: 300px;
 }
 
 .data-explain {
@@ -742,8 +746,8 @@ margin-left: 300px;
 	color: white;
 	margin-left: 10px;
 	padding-left: 0px;
-	padding-right: 90px;
-	margin-right: 80px;
+	padding-right: 50px;
+	margin-right: 40px;
 
 
 }
@@ -792,16 +796,12 @@ text-align: center;
 	padding-left: 80px;
 }
 
-.blog-post li{
+.source-links li{
 	color: white;
+	font-size: 12px;
 }
 
-.source-links{
-	color: white;
-	font-size: 20px;
-	margin-right: 100px;
-	margin-left: 100px;
-}
+
 
 .blog-card{
 	display: flex;

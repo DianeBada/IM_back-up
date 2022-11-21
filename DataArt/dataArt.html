@@ -1,74 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "description" content = "This is the page that shows Data Visuaisation made by the developer of the website">
-<meta name = "keywords" contnet=" Data Visualisation, Films, Games, jewelry ">
-    <title>Data Art</title>
-    <link rel="stylesheet" href="../css/Data.css">
-    <script src="/js/jquery-3.1.1.min.js"></script>
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-<link rel="stylesheet" type="text/css" href="../css/responsive.css">
-
-<link rel="stylesheet" type="text/css" href="inspector.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title dir="ltr">Exam Data Art</title>
+    <link rel="stylesheet" type="text/css" href="css/styles-exam-data.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="../css/blog.css">
+<link rel="stylesheet" type="text/css" href="..css/responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oleo+Script+Swash+Caps&family=Playfair+Display&family=Roboto:ital,wght@1,300&display=swap" rel="style.css"></head>
 <script src="https://kit.fontawesome.com/e2a7956efc.js" crossorigin="anonymous"></script>
 
 
-    <meta content="utf-8" http-equiv="encoding">
-    <body>
 
+  </head>
 
+	<header class="header">
+    <section class="container-fluid">
+      <section class="row d-flex align-items-center">
+        <section class="col-auto">
+        </section>
+        <nav class="text-right">
+          <a href="../index.html" class="logo">  <p>BADABLING</p></a>
 
-		<header class="header">
-			<section class="container-fluid">
-				<section class="row d-flex align-items-center">
-					<section class="col-auto">
-					</section>
-					<nav class="text-right">
-						<a href="../index.html" class="logo">  <p>BADABLING</p></a>
-	
-						<input type = "checkbox" id = "check">
-				<label for="check" class = "burger-button" id = "burger-button"><i class="fa-solid fa-bars"></i></label>
-							<ul class = "nav-sections"> 
-								<li><a href="../Blog.html">Blog</a></li>
-								<li><a href="../Design.html">Design</a></li>
-								<li><a href="../DataViz/DataVisualization.html">Data-Visualisation</a></li>
-								<li><a href="dataArt.html">Data-Art</a></li>
-							</ul>
-						<!-- <a class="nav_icon" id="nav_icon" href="#!">
-							<i class="fa fa-bars"></i></a> -->
-					</nav>
-		
-				</section>
-				</section>
-			
-		</header>	
-	
-	
-	<main>
-
-       <section class = "chart">
-
-       </section>     
-
-<p class = "data-artt"></p>
-
-    </main>
-   
-      
-<script type="module" src="moduleScript.js">
+          <input type = "checkbox" id = "check">
+      <label for="check" class = "burger-button" id = "burger-button"><i class="fa-solid fa-bars"></i></label>
+            <ul class = "nav-sections"> 
+              <li><a href="../Blog.html">Blog</a></li>
+              <li><a href="../Design.html">Design</a></li>
+              <li><a href="../DataViz/DataVisualization.html">Data-Visualisation</a></li>
+              <li><a href="dataArt.html">Data-Art</a></li>
+            </ul>
+          <!-- <a class="nav_icon" id="nav_icon" href="#!">
+            <i class="fa fa-bars"></i></a> -->
+        </nav>
+  
+      </section>
+      </section>
     
-</script>
-<script src="js/basic.js"></script>
+  </header>	
 
 
-</main>
+  <body class="opening hide-UI view-2D zoom-large data-close controls-close">
 
-</body>
 
+    <section id="navbar">
+
+      <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
+      <h1 class = "solar-title">Solar System - Data Art Prototype</h1>
+      <h2 class = "solar-subtitle"> A visual representation of planet's speed in relation to the sun.</h2>
+      <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
+    </section>
+	
+
+    <section id="data">
+      <a class="sun" title="sun" href="#sunspeed">Sun</a>
+      <a class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
+      <a class="venus" title="venus" href="#venusspeed">Venus</a>
+      <a class="earth active" title="earth" href="#earthspeed">Earth</a>
+      <a class="mars" title="mars" href="#marsspeed">Mars</a>
+      <a class="jupiter" title="jupiter" href="#jupiterspeed">Jupiter</a>
+      <a class="saturn" title="saturn" href="#saturnspeed">Saturn</a>
+      <a class="uranus" title="uranus" href="#uranusspeed">Uranus</a>
+      <a class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
+    </section>
+	<section id = "examlink-data">
+		<a href="ExamDataArt.html" >View Exam Data Art</a>
+
+	</section>
+
+    <aside id="controls">
+      <label>
+        <input type="radio" class="set-speed" name="scale" checked>
+        <span>Speed</span>
+      </label>
+    </aside>
+    <section id="universe" class="scale-stretched">
+      <section id="galaxy">
+        <section id="solar-system" class="earth">
+          <section id="mercury" class="orbit">
+            <section class="pos">
+              <section class="planet">
+                <dl class="infos">
+                  <dt>Mercury</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </section>
+            </section>
+          </section>
+          <section id="venus" class="orbit">
+            <section class="pos">
+              <section class="planet">
+                <dl class="infos">
+                  <dt>Venus</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </section>
+            </section>
+          </section>
+          <section id="earth" class="orbit">
+            <section class="pos">
+              <section class="orbit">
+                <section class="pos">
+                  <section class="moon"></section>
+                </section>
+              </section>
+              <section class="planet">
+                <dl class="infos">
+                  <dt>Earth</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </section>
+            </section>
+          </section>
+          <section id="mars" class="orbit">
+            <section class="pos">
+              <section class="planet">
+                <dl class="infos">
+                  <dt>Mars</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </section>
+            </section>
+          </section>
+          <section id="jupiter" class="orbit">
+            <section class="pos">
+              <section class="planet">
+                <dl class="infos">
+                  <dt>Jupiter</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </section>
+            </section>
+          </section>
+          <section id="saturn" class="orbit">
+            <section class="pos">
+              <section class="planet">
+                <section class="ring"></section>
+                <dl class="infos">
+                  <dt>Saturn</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </section>
+            </section>
+          </section>
+          <section id="uranus" class="orbit">
+            <section class="pos">
+              <section class="planet">
+                <dl class="infos">
+                  <dt>Uranus</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </section>
+            </section>
+          </section>
+          <section id="neptune" class="orbit">
+            <section class="pos">
+              <section class="planet">
+                <dl class="infos">
+                  <dt>Neptune</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </section>
+            </section>
+          </section>
+          <section id="sun">
+            <dl class="infos">
+              <dt>Sun</dt>
+              <dd><span></span></dd>
+            </dl>
+          </section>
+        </section>
+      </section>
+    </section>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="/text/javascript">
+    if (typeof jQuery == 'undefined') { 
+      document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    <script src="/js/prefixfree.min.js"></script>
+    <script src="/js/scripts.min.js"></script>
+    
+ <footer class="footer-exam">
+    <p class = "u-email">&copy; BADABLING.com</p>
+</footer>
+  </body>
+  
 </html>

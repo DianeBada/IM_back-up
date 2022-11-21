@@ -342,7 +342,7 @@
     }
 
   .blog1-text{
-    font-size: 12px;
+    font-size: 11px;
 
     padding-right: 80px;
     margin-left: 160px;
@@ -356,17 +356,27 @@
 
   .blog-container h2{
 
-    font-size: 20px;
+    font-size: 15px;
     margin-left: -20px;
     
 
+  }
+
+  .blog-post p{
+    padding-right: 200px;
+  }
+  
+
+  .blog-post{
+    margin-left: 50px;
+    padding-right: 20px;
   }
 
   .blog-container figure {
 
    width: 400px;
    height: 100px;
-   margin-left: 150px;
+   margin-left: 50px;
   }
 
   .source-links{
@@ -394,10 +404,9 @@
 
   .blog-caption{
     font-size: 10px;
-    padding-left: 200px;
     padding-right: 200px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
   
 
